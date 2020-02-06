@@ -40,8 +40,8 @@ jobs:
         echo hi!
         echo $namespacePresent
         echo $NAMESPACE
-        echo $KUBECONFIG
         cat $KUBECONFIG
+        echo $KUBECONFIG
         if [ $namespacePresent -eq 0 ]
         then
             echo `kubectl create namespace $NAMESPACE`
